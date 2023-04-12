@@ -1,0 +1,6 @@
+/* Show it is fixed to the top */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
