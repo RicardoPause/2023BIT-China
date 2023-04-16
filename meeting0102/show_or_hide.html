@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    #panel,#flip
+    {
+      padding:20px;
+      text-align:center;
+      background-color:#c3c3c3;
+      border:solid 2px #c3c3c3;
+    }
+    #panel
+    {
+      padding:200px;
+      display:none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="flip">Congratulations!</div>
+<div id="panel">马上就要讲完了(</div>
+
+</body>
+</html>
