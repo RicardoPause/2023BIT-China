@@ -1,0 +1,39 @@
+body{
+  margin: 0px;
+  font-size: 150px;  
+  background: #fff;
+}
+.container{
+  position: absolute;
+  text-align: justify;
+  text-align-last: justify;
+  margin: 50px;
+}
+.hoge{
+  position: absolute;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;  
+  animation-name: blink;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+  
+}
+.fuga{
+  color: #002;
+}
+
+
+@keyframes blink {
+  0% { transform: translateY(0px); }
+  12% { transform: translateY(80px); }
+  24% { transform: translateY(0px); }
+  36% { transform: translateY(-80px); }
+  48% { transform: translateY(0px); }
+  60% { transform: translateX(80px); }
+  72% { transform: translateX(0px); }
+  84% { transform: translateX(-80px); }
+  100% { transform: translateX(0px); }
+}
